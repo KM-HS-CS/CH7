@@ -1,0 +1,70 @@
+7.14
+  a) Can't have a primitive type in <>, have to wrap it
+  b) Need to clarify the type when you create the ArrayList
+  c) Need () at end so program knows to use constructer
+  d) You can't set values to positions on the list that haven't been created, must use .add method
+  e) ArrayList values was never created, need new ArrayList<>();
+7.15  // not sure if I did this right
+  a) public int[] sortDecreasing(int[] inArray) 
+  b) public void printALL(<type>[] inArray, String seperator)
+  c) public int howManyLower(int[] inArray, int inNumber)
+  d) public int[] removeLowerThan(int[] inArray, int minNumber)
+  e) public int[] createLowerNumberArray(int[] inArray, int minNumber)
+7.20
+  Store the first number in temp
+  Replace the first number with the next number
+  Repeat until there is no next number 
+  When there is no next number set that position to temp
+7.29
+a)  for (int i = 0; i < ROWS; i++) {
+			for (int j = 0; j < COLUMNS; j++) {
+				values[i][j] = 0;
+			}}
+b)  for (int i = 0; i < ROWS; i++) {
+			for (int j = 0; j < COLUMNS; j++) {
+				if (i % 2 + j % 2 == 1) {
+					values[i][j] = 1;
+				}
+				else {
+				values[i][j] = 0;
+				}}}
+c)	for (int i = 1; i < ROWS - 1; i++) {
+			for (int j = 0; j < COLUMNS; j++) {
+				values[i][j] = 1;
+			}}
+		for (int j = 0; j < COLUMNS; j++) {
+				values[0][j] = 0;
+				values[ROWS - 1][j] = 0;
+			}
+d)  int count = 0;
+		for (int i = 1; i < ROWS - 1; i++) {
+			for (int j = 0; j < COLUMNS; j++) {
+				count += values[i][j];
+			}}
+		System.out.println(count);
+e)  for (int i = 0; i < ROWS; i++) {
+			for (int j = 0; j < COLUMNS; j++) {
+				System.out.print(values[i][j] + " | ");
+			}
+			System.out.println();
+		}
+7.32
+  a) True
+  b) False
+  c) False
+  d) False
+  e) False
+  f) False
+  g) False
+7.33
+  a) Compare the elements at index 0 and if they match repeat for indecies all the way until all have been checked or they don't match
+  b) Use the clone method
+  c) For all indecies set the value to 0
+  d) While the ArrayList length is greater than 0 Remove the value at index zero
+7.34
+  a) True
+  b) False
+  c) False
+  d) True
+  e) False
+  f) False
